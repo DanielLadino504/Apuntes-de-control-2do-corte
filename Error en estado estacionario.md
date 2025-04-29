@@ -1,1 +1,1 @@
-#Error en estado estacionario
+# Error en estado estacionario
