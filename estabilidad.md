@@ -30,5 +30,74 @@ Para demostrar su funcionamiento se hara una breve demostracion con la siguiente
 
 $$G(s)=\frac{7s}{6s+1}\to 6s+1=0\to s=-\frac{1}{6}$$
 
+# Ubicaion de polos 
+Con ayuda de este sistema podemos verificar si un sistema es estable o no, para esto se deben cumplir lass condiciones estipuladas en el analisis de estabilidad por ubicacion. Es decir, todos los polos deben tener parte real negativa.
+De lo contrario su sistema es considerado inestable con tan solo un polo que tenga parte real positiva.
+## ejemplo 2
+Tenemos la siguiente funcion de transferencia: 
+
+$$G(s)=\frac{8}{2s+1}$$
+
+Nos centramos en el denominador y resolvemos:
+
+$$2s+1=0$$
+
+$$s=-\frac{1}{2}$$
+
+## Ejemplo 2
+
+Tenemos la siguiente funcion de transferencia:
+
+$$G(s)=\frac{8}{s^{2}-0.1s+1}$$
+
+Nos centramos en el denominador
+
+$$s^{2}-0.1s+1$$
+
+$$s_{1}=0.05+j0.9987$$
+
+$$s_{2}=0.05-j0.9987$$
+
 ## Criterio de Routh-Hurwitz
-Para poder decir que se tiene un pilonomio de hurwitz sus raices deben tener parte real negativa. Este criterio permite identificar estos polinomios de una manera mas sencilla
+Para poder decir que se tiene un pilonomio de hurwitz sus raices deben tener parte real negativa. Este criterio permite identificar estos polinomios de una manera mas sencilla siempre y cuando tenga la siguiente forma:
+
+$$a_{0}s^{n}+a_{1}s^{n-1}+...+a_{n-1}s+a_{n}=0$$
+
+Teniendo esta forma se procede a seguir unos criterios para determinar si el sistema es de hurwitz:
+cada coeficiente debe ser positivo, si uno de los coeficientes es cero no es un polinomio de hurwitz.
+siguiendo estas normas puede que el polinomio sea de hurwitz.
+Esto se deterina de la siguiente manera:
+(inserte imagen aqui)
+## ejemplo
+Tenemos el siguiente polinomio:
+
+$$s^{3}+s^{2}+2s+24=0$$
+
+Verificamos si cumple con los requisitos y nos disponemos a realizar las  debidas operaciones:
+
+
+$$b_{1}=\frac{2-24}{1}=-22$$
+
+$$b_{1}=\frac{(-22)(24)-(1)(0)}{-22}=24$$
+
+# Diseño de controlador para garantizar estabilidad
+# Ejercicio 1
+Tenemos la siguiente funcion de transferencia:
+
+$$G(s)=\frac{1}{s^{4}+s^{3}+3s^{2}+2s}$$
+
+Se plantea la ecuacion para el controlador:
+
+$$G_{o}(s)=\frac{K_{p}}{s^{4}+s^{3}+3s^{2}+2s+k_{p}}$$
+
+Procedemos a aplicar criterio de hurwitz
+
+$$b_{1}=\frac{(3)(3)-(1)(2)}{3}=\frac{7}{3}$$
+
+$$b_{2}=\frac{(3)(k_{p})-(1)(0)}{3}=k_{p}$$
+
+$$c_{1}=\frac{(\frac{7}{3})(2)-(3)(k_{p})}{\frac{7}{3}} = \frac{\frac{14}{3}-3k_{p}}{\frac{7}{3}}$$
+
+$$c_{1}=\frac{\frac{\frac{14}{3}-3k_{p}}{\frac{7}{3}}\cdot k_{p}-(\frac{7}{3})(0)}{\frac{\frac{14}{3}-3k_{p}}{\frac{7}{3}}}$$
+
+# Ejercicios
