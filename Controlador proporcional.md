@@ -8,6 +8,8 @@ En lazo cerrado para cambiar el tiempo de respuesta del sistema se debe cambiar 
 # control ON-OFF
 Se trata de un sistema con un controlador que activa o desactiva una salida de forma binaria sin algun estado intermedio, se puede encontrar en sistemas que tienen dos posiciones estables como el encendido o apagad o.
 # controlador de accion proporcional
+![](sin-tc3adtulo1.png)
+
 En este tipo de controlador se multiplica el error del sistema con una costante diseñada para conseguir el funcionamiento deseado.
 
 # ejemplo 1
