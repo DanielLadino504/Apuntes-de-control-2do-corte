@@ -101,3 +101,36 @@ $$c_{1}=\frac{(\frac{7}{3})(2)-(3)(k_{p})}{\frac{7}{3}} = \frac{\frac{14}{3}-3k_
 $$c_{1}=\frac{\frac{\frac{14}{3}-3k_{p}}{\frac{7}{3}}\cdot k_{p}-(\frac{7}{3})(0)}{\frac{\frac{14}{3}-3k_{p}}{\frac{7}{3}}}$$
 
 # Ejercicios
+## ejercicio #1
+Tenemos la siguiente ecuacion diferencial:
+
+$$s^{4}+8s^{3}+26s^{2}+16s+22$$
+
+Primeramente verificamos que cumpla con los requisitos. Como se puede ver todos los coeficientes son positivos y ninguno  de ellos es cero por lo tanto podemos seguir con el procedimiento. obteniendo los siguientes resultados:
+
+$$\begin{bmatrix}
+ s^{4}: & 1 & 26 & 22 \\
+ s^{3}: & 8 & 16 & 0  \\
+ s^{2}: & 24 & 22 & 0  \\
+ s^{1}: & 16-\frac{176}{24} & 0 & 0  \\
+ s^{0}: & 22 & 0 & 0  \\
+\end{bmatrix}$$
+
+Como se puede ver en la primera colunma todos no hay cambio de signo o algun elemento es cero. por lo tanto el sistema es estable.
+
+## Ejercicio #2
+
+Tenemos la siguiente ecuacion diferencial:
+
+$$s^{3}+10s^{2}+5s+k$$
+
+Para empezar nos aseguramos que el sistema cumpla con los requisitos, todos los coeficientes son positivos y ninguno de ellos valen cero. Sabiendo esto podemos seguir con el procedimiento obteniendo los siguientes resultados.
+
+$$\begin{bmatrix}
+s^{3}: & 1 & 5 \\
+s^{2}: & 10 & k \\
+s^{1}: & \frac{50-k}{10} & 0 \\
+s^{0}: & k &  \\
+\end{bmatrix}$$
+
+Como se puede ver, para que el sistema sea estable entonces 50-k>0 y K>0 para que el sistema sea estable.
