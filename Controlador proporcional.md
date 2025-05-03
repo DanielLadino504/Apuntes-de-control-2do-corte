@@ -126,3 +126,34 @@ $$3+k_{p}=1.96$$
 $$k_{p}=-1.03$$
 
 ## ejercicio #2
+Tenemos la siguiente funcion de trasnferencia y se necesita que el sistema sea criticamente amortiguado:
+
+$$G(s)=\frac{1}{s^{2}+6s+25}$$
+
+Planteamos la respuesta del sistema en lazo abierto:
+
+$$w_{n}=\sqrt{25}=5$$
+
+$$2\zeta w_{n}=2\zeta 5=6$$
+
+$$\zeta=\frac{6}{10}=0.6$$
+
+Respuesta del sistema actualmente sub-amortiguada
+
+Planteamos la ecuacion del controlador:
+
+$$G_{o}(s)=\frac{k_{p}\frac{1}{s^{2}+6s+25}}{1+K_{p}\frac{1}{s^{2}+6s+25}}$$
+
+Resolviendo la ecuacion tenemos:
+
+$$G_{o}(s)=\frac{k_{p}}{s^{2}+6s+25+k_{p}}$$
+
+Con esto empezamos a calcular el valor del controlador poniendo el valor de z como 1:
+
+$$2\zeta w_{n}=2\cdot 1\cdot \sqrt{25+k_{p}}=6$$
+
+$$(\sqrt{25+k_{p}})^{2}=3^{2}$$
+
+$$25+k_{p}=9$$
+
+$$k_{p}=9-25=-16$$
