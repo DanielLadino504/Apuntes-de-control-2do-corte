@@ -67,7 +67,8 @@ Teniendo esta forma se procede a seguir unos criterios para determinar si el sis
 cada coeficiente debe ser positivo, si uno de los coeficientes es cero no es un polinomio de hurwitz.
 siguiendo estas normas puede que el polinomio sea de hurwitz.
 Esto se deterina de la siguiente manera:
-(inserte imagen aqui)
+
+![](image-9-1024x379.png)
 ## ejemplo
 Tenemos el siguiente polinomio:
 
