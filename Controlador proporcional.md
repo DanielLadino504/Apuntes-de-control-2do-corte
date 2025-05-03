@@ -8,6 +8,8 @@ Para empezar se debe tener en claro que variable se quiere controlar para compar
 
 En lazo cerrado para cambiar el tiempo de respuesta del sistema se debe cambiar la planta de manera que sea un sistema en lazo cerrado añadiendo un controlador y esto no solo puede permitir que el sistema sea mas rapido al momento de enviar la respuesta de interes tambien puede llegar a mejorar el desempeño del sistema.
 # control ON-OFF
+![](on-off.jpg)
+
 Se trata de un sistema con un controlador que activa o desactiva una salida de forma binaria sin algun estado intermedio, se puede encontrar en sistemas que tienen dos posiciones estables como el encendido o apagad o.
 # controlador de accion proporcional
 ![](sin-tc3adtulo1.png)
@@ -92,5 +94,35 @@ $$K_{p}=22.14-15=7.14$$
 
 # Ejercicios
 ## ejercicio #1
+Se tiene la siguiente funcion de tranferencia y se necesita que el sistema sea sobre-amortiguado
+
+$$\frac{3}{s^{2}+3s+3}$$
+
+Planteamos la respuesta del sistema en lazo abierto:
+
+$$w_{n}=\sqrt{3}$$
+
+$$2\zeta \sqrt{3}=3$$
+
+$$\zeta=\frac{3}{2\sqrt{3}}=0.86$$
+
+Como podemos ver el sistema actualmente es sub-amortiguado.
+Planteamos la ecuacion para el controlador proporcional:
+
+$$G_{0}(s)=\frac{k_{p}\frac{3}{s^{2}+3s+3}}{1+K_{p}\frac{3}{s^{2}+3s+3}}$$
+
+De esta operacion nos queda:
+
+$$G_{0}(s)=\frac{3k_{p}}{s^{2}+3s+3+k_{p}}$$
+
+Despues de esto empezamos a calcular el valor de k poniendo el valor deseado de zeta, en este caso sera 1.07:
+
+$$2\zeta w_{n}=2\cdot 1.07\cdot \sqrt{3+k_{p}}=3$$
+
+$$(\sqrt{3+k_{p}})^{2}=(\frac{3}{2.14})^{2}$$
+
+$$3+k_{p}=1.96$$
+
+$$k_{p}=-1.03$$
 
 ## ejercicio #2
