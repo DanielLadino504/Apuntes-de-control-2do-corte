@@ -55,7 +55,7 @@ $$G(s) = \frac{36}{s^2 + 4.2s + 36}$$
   - Ejemplo:  
     $$Y_1(s) = \frac{2}{s(s+5)} \quad \text{vs.} \quad Y_2(s) = \frac{s+2}{s(s+5)}$$
     
-    -- Aplicamos fraciones parciales
+    - Aplicamos fraciones parciales
     
 $$y_1 = 0.4(1 - e^{-5t})$$
 $$y_2 = 0.4 + 0.6e^{-5t}$$
