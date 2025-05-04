@@ -1,5 +1,6 @@
 # Sistemas de segundo orden
 Daniel Felipe Ladino, Angel David Melo
+
 Se le conoce como los sistemas que tienen dos polos en su funcion de transferencia.
 Estos sistemas tienen la siguiente estructura:
 
