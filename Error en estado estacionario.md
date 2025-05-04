@@ -1,5 +1,7 @@
 # Error en Estado Estacionario
 
+Daniel Felipe Ladino, Angel David Melo
+
 El **error en estado estacionario** es un concepto crucial en el estudio de sistemas de control. Representa la diferencia persistente entre la salida deseada (la entrada de referencia) y la salida real del sistema, una vez que toda la dinámica transitoria inicial ha desaparecido y el sistema ha alcanzado un comportamiento estable a largo plazo.
 
 Un ejemplo es imaginar querer que un robot siga una línea recta perfecta. El error en estado estacionario sería qué tan lejos de la línea recta termina el robot después de un tiempo largo. Un error pequeño significa alta precisión.
