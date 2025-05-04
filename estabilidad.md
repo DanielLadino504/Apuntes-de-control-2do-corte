@@ -1,4 +1,6 @@
 # Estabilidad
+Daniel Felipe Ladino, Angel David Melo
+
 Un sistema lineal o invariante en el tiempo es estable si su respuesta en condiciones naturales tiene a cero en un tiempo indefinido y para que este tipo de sistema sea inestable su respuesta debe crecer ilimitadamente en un tiempo indefinido.
 ## Teorema del valor final
 Esta herramienta nos permite saber cual es el valor del sistema que estamos trabajando en estado estacionario. sin embargo, esto solo funciona cuando el sistema es estable.
